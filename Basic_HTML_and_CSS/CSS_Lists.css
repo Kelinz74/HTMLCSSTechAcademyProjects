@@ -1,0 +1,12 @@
+
+ol {
+	list-style-type: upper-roman;
+}
+
+ul {
+	list-style-type: "\1F44D"; // thumbs up sign
+}
+
+h1 {
+  text-shadow: 2px 2px #ff0000;
+}
