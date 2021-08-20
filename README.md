@@ -3,7 +3,7 @@ My HTML and CSS projects for Tech Academy.
 
 # Projects
 - [Space Station](https://github.com/Kelinz74/HTMLCSSTechAcademyProjects/tree/085eedd314f50790bb684b7884bb9d6002807c70/Space_Station_Project)
-- [One Page Web Site](https://github.com/Kelinz74/HTMLCSSTechAcademyProjects/blob/085eedd314f50790bb684b7884bb9d6002807c70/Basic_HTML_and_CSS/one_page_website.html)
+- [One Page Web Site](https://github.com/Kelinz74/HTMLCSSTechAcademyProjects/blob/main/Basic_HTML_and_CSS/one_page_website/one_page_website.html)
 - More to be listed soon.
 
 ## Space Station
