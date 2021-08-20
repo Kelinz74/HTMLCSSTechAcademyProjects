@@ -10,4 +10,4 @@ My HTML and CSS projects for Tech Academy.
   This is a web site for the adventure seeking lover of all things space.  An advertisement for being able to travel to space.
   
 ## One Page Web Site
-  This is a one page demonstration much like the format of the Space Station web site but will slight changes to font and font size with a video near that contact area.
+  This is a one page demonstration much like the format of the Space Station web site but with slight changes to font and font size with a video near that contact area. A functional lightbox (modal image gallery) for veiwing the image gallery.
