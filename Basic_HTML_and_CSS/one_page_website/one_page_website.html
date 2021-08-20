@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The Avengers</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
+		<link rel="stylesheet" type="text/css" href="./CSS/animation_one_page_website.css">
+		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website_shadowbox_slideshow.css">
+		<script src="./JS/one_page_website.js" defer></script>
+	</head>
+	<body>
+		
+		<!--NAV -->
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home"><li>HOME</li></a>
+					<a href="#gallery"><li>Avengers</li></a>
+					<a href="#fanclub"><li>Fan Club</li></a>
+				</ul>
+			</div>
+		</div>
+		<!--END NAV -->
+		
+		<!--HOME -->
+		<div id="home">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">The Avengers</span>
+				</div>
+			</div>
+		</div>
+		<!--END HOME -->
+		
+		<!--GALLERY -->
+		<section id="gallery">
+			<div class="container">
+				<h1>Gallery</h1>
+				<div class="flex-container">
+				
+					<!-- PHOTO-CONTAINER 1-->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/captain_america.jpg" alt="Captain America." width="400" height="500">
+							<div class="photo-overlay">
+								 <h3 class="white-head"><a onclick="openModal();currentSlide(1)" alt="Captain America.">Click to Start Slideshow</a></h3>
+								 <p>"I don't like bullies; I don't care where they're from."<br>-Steve Rogers</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER -->
+					
+					<!-- PHOTO-CONTAINER 2-->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/iron_man.jpg"  alt="Iron Man." width="400" height="500">
+							<div class="photo-overlay">
+								 <h3 class="white-head"><a onclick="openModal();currentSlide(2)" alt="Iron Man.">Click to Start Slideshow</a></h3>
+								 <p>"I am Iron Man!"<br>-Tony Stark</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER -->
+					
+					<!-- PHOTO-CONTAINER 3-->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/incredible_hulk.jpg" alt="Incredible Hulk." width="400" height="500">
+							<div class="photo-overlay">
+								 <h3 class="white-head"><a onclick="openModal();currentSlide(3)" alt="Incredible Hulk.">Click to Start Slideshow</a></h3>
+								 <p>"HULK SMASH!"<br>-Bruce Banner, aka "The Incredible Hulk"</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER -->
+					
+					<!-- PHOTO-CONTAINER 4-->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/thor.jpg" alt="Thor." width="400" height="500">
+							<div class="photo-overlay">
+								 <h3 class="white-head"><a onclick="openModal();currentSlide(4)" alt="Thor.">Click to Start Slideshow</a></h3>
+								 <p>"I have no plans to die today!"<br>-Thor</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER -->
+					
+					<!-- PHOTO-CONTAINER 5-->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/black_widow.png" alt="Black Widow." width="400" height="500">
+							<div class="photo-overlay">
+								 <h3 class="white-head"><a onclick="openModal();currentSlide(5)" alt="Black Widow.">Click to Start Slideshow</a></h3>
+								 <p>"I'm multitasking."<br> -Natasha Romanoff</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER -->
+					
+					<!-- PHOTO-CONTAINER 6-->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/hawkeye.jpg" alt="Hawkeye." width="400" height="500">
+							<div class="photo-overlay">
+								 <h3 class="white-head"><a  onclick="openModal();currentSlide(6)" alt="Hawkeye.">Click to Start Slideshow</a></h3>
+								 <p>"...But if you step out that door, you are an Avenger."<br>-Clint Barton</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER -->
+					
+				</div>
+			</div>
+		</section>
+		<!-- END GALLERY -->
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		
+				<div class="mySlides">
+					<div class="numbertext">1 / 6</div>
+					<img src="./Images/thumb/captain_america.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">2 / 6</div>
+					<img src="./Images/thumb/iron_man_600x781.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">3 / 6</div>
+					<img src="./Images/thumb/incredible_hulk_600x781.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">4 / 6</div>
+					<img src="./Images/thumb/thor_600x781.jpg" style="width:100%">
+				</div>
+	
+				<div class="mySlides">
+					<div class="numbertext">5 / 6</div>
+					<img src="./Images/thumb/black_widow_600x781.png" style="width:100%">
+				</div>
+	
+				<div class="mySlides">
+					<div class="numbertext">6 / 6</div>
+					<img src="./Images/thumb/hawkeye_600x781.jpg" style="width:100%">
+				</div>
+			
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+			
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="./Images/thumb/captain_america.jpg" onclick="currentSlide(1)" alt="Captain America" style="height: 150px; width: 75px;" >
+				</div>
+			
+				<div class="column">
+					<img class="demo" src="./Images/thumb/iron_man.jpg" onclick="currentSlide(2)" alt="Iron Man" style="height:  150px; width: 75px;">
+				</div>
+			
+				<div class="column">
+					<img class="demo" src="./Images/thumb/incredible_hulk.jpg" onclick="currentSlide(3)" alt="Incredible Hulk" style="height: 150px; width: 75px;">
+				</div>
+			
+				<div class="column">
+					<img class="demo" src="./Images/thumb/thor.jpg" onclick="currentSlide(4)" alt="Thor" style="height: 150px; width: 75px;">
+				</div>
+	
+				<div class="column">
+					<img class="demo" src="./Images/thumb/black_widow.png" onclick="currentSlide(5)" alt="Black Widow" style="height: 150px; width: 75px;">
+				</div>
+	
+				<div class="column">
+					<img class="demo" src="./Images/thumb/hawkeye.jpg" onclick="currentSlide(6)" alt="Hawkeye" style="height: 150px; width: 75px;">
+				</div>
+			</div>
+		</div>
+		
+		<!-- RSVP -->
+		<section>
+			<div id="fanclub">
+				<div class="container">
+					<div class="heading-padding">
+						<h1 class="heading-padding">Avengers Fan Club</h1><br>
+						<center><iframe width="840" height="630" src="https://www.youtube.com/embed/_A3kYAqy4uo"></iframe></center><br><br><br>
+						<div class="reservation">
+							<h2><span>Be apart of the Avengers Fan Club.</span>
+								<br>Sign up to be apart of Earths greatest protectors today!
+							</h2>
+							<p class="rsvp-text">
+								Please provide us with your basic contact information.
+							</p>
+							<div class="form-rsvp">
+								<form action="" method="post">
+									<input class="rsvp" type="text" value placeholder="First Name">
+									<input class="rsvp" type="text" value placeholder="Last Name">
+									<input class="rsvp" type="text" value placeholder="Email Address">
+									<input class="rsvp" type="text" value placeholder="Phone Number">
+									<div class="form-spacer">
+										<label class="terms">Terms and Conditions</label>
+									</div>
+									<div class="submit">
+										<input type="submit" value="Submit">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</section>
+		<!-- End RSVP-->
+		
+		<!-- FOOTER -->
+		<div id="footer">
+			www.theavengers.shield &nbsp;|&nbsp; &copy; 2021
+		</div>
+		<!-- END FOOTER -->
+							
+	</body>
+</html>
